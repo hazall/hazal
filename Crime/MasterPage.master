@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Crime</title>
+    <link rel="stylesheet"  href="StyleSheet.css"/>
+    <header>
+        Crime
+        <img src="suc1.jpg" />
+    </header>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="sayfa">
+
+            <div id="menu">
+                <ul>
+                    <li><a href="Default.aspx">Anasayfa</a></li>
+                    <li><a href="Suclular.aspx">Suclular</a></li>
+                    <li><a href="#">Biz Kimiz</a></li>
+                </ul>
+            </div>
+           <div class="aa">
+               SUÇLULAR
+                <div class="bb">Crime Type</div>
+                    
+                
+                <asp:DropDownList ID="DropDownList1" CssClass="drop" runat="server" AutoPostBack="True" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
+                    <asp:ListItem>Burglary</asp:ListItem>
+                    <asp:ListItem>Robbery</asp:ListItem>
+                    <asp:ListItem>VehicleCrime</asp:ListItem>
+                </asp:DropDownList>
+                        <%--<asp:Label ID="Label1" runat="server" Text="Filtrele"></asp:Label>
+                        <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True">
+                            <asp:ListItem>Offenders</asp:ListItem>
+                            <asp:ListItem>Victims</asp:ListItem>
+                        </asp:DropDownList>--%>
+                
+                    <div class="bb">City</div>
+                
+                <asp:DropDownList ID="DropDownList2" CssClass="drop"  runat="server" AutoPostBack="True" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged">
+                    <asp:ListItem>Istanbul</asp:ListItem>
+                    <asp:ListItem>Ankara</asp:ListItem>
+                </asp:DropDownList>
+
+                
+                    <div class="bb">Gender</div>
+                
+                <asp:DropDownList ID="DropDownList3" CssClass="drop"  runat="server" AutoPostBack="True" OnSelectedIndexChanged="DropDownList3_SelectedIndexChanged">
+                    <asp:ListItem Value="K">Female</asp:ListItem>
+                    <asp:ListItem Value="E">Male</asp:ListItem>
+                </asp:DropDownList>
+                </br>
+               <asp:Button ID="Button1" runat="server" Text="Filtrele" OnClick="Button1_Click" />
+                
+            </div>
+            <div id="datalist">
+                <asp:DataList ID="DataList1" CssClass="GridMain" runat="server">
+                    <ItemTemplate>
+                        <a href="Default2.aspx?id=<%#Eval("OffID") %>"><asp:Label ID="Label1" runat="server" Text='<%#Eval("OName") %>'></asp:Label>
+                        <asp:Label ID="Label2" runat="server" Text='<%#Eval("OSurname") %>'></asp:Label></a>
+                    </ItemTemplate>
+
+                </asp:DataList>  
+            </div>
+            <div>
+               <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                 
+            </asp:ContentPlaceHolder>
+            </div>
+            
+        </div>
+    
+    </form>
+</body>
+</html>

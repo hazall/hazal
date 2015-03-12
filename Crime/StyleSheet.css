@@ -1,0 +1,119 @@
+﻿body {
+    background-color:black;
+}
+header {
+    width:800px;
+    height:auto;
+    margin:auto;
+    text-align:center;
+    
+    background-color:black;
+}
+#sayfa {
+    width:800px;
+    height:1000px;
+    background-color:ActiveCaption;
+    margin:auto;
+    margin-top:20px;
+
+}
+#menu{
+    width:800px;
+    height:100px;
+    text-align:center;
+    background-color:cadetblue;
+}
+#menu ul{
+    
+    list-style-type: none;
+   
+}
+#menu ul li{
+    float:left;
+    text-decoration:none;
+    margin-left:20px;
+    margin-top:30px;
+    
+}
+.aa {
+    width:250px;
+    height:auto;
+    font-size:24px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:pink;
+    background-color:gray;
+}
+.GridMain{
+    color:chocolate;
+    margin-top:20px;
+    background-color:beige;
+}
+.bb{
+    font-family:Cambria;
+    font-size:large;
+    color:pink;
+    text-align:center;
+}
+#list{
+    margin-left:20px;
+    margin-top:20px;
+    background-color:gray;
+    float:left;
+    margin-bottom:15px;
+    padding-bottom:15px;
+
+}
+.sekil{
+    margin-top:10px;
+    margin-left:10px;
+    border-color:blueviolet;
+    
+}
+#label{
+    font-size:large;
+    font-family:'Times New Roman', Times, serif;
+    float:left;
+
+}
+#cc{
+    float:left;
+    background-color:lavender;
+}
+#solmenu{
+    height:200px;
+    background-color:chocolate;
+    width:200px;
+
+}
+.baslık{
+
+}
+#dd{
+    font-family:Cambria;
+    font-size:large;
+    color:maroon;
+    text-align:center;
+}
+.ww{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:large;
+    color:beige;
+
+}
+.qq{
+    border-bottom-color:blue;
+    border-bottom:inherit;
+    text-decoration:solid;
+}
+#hepsi{
+    width:auto;
+    height:auto;
+    background-color:ActiveBorder;
+    font-size:medium;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.drop{
+    color:chocolate;
+    background-color:beige;
+}
